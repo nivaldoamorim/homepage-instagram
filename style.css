@@ -17,7 +17,7 @@ body {
     justify-content: center;
 }
 
-.instagram-wrapper {
+.principal {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -25,27 +25,27 @@ body {
     height: 100vh;
 }
 
-.instagram-phone {
+.celular {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.instagram-phone img {
+.celular img {
     height: 50rem;
 }
 
-.instagram-continue {
+.continue {
     display: flex;
-    align-items: center; /* horizontal */
-    justify-content: space-around; /* vertical */
+    align-items: center;
+    justify-content: space-around;
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
 }
 
-.group {
+.box {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +56,7 @@ body {
     border: 1px solid lightgray;
 }
 
-.group:nth-child(1) {
+.box:nth-child(1) {
     min-height: 19rem;
 }
 
@@ -64,7 +64,7 @@ body {
     height: 3rem;
 }
 
-.profile-photo {
+.foto-perfil {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,31 +72,31 @@ body {
     overflow: hidden;
 }
 
-.profile-photo img {
+.foto-perfil img {
     height: 6rem;
 }
 
-.instagram-login {
+.login {
     background-color: #0095f6;
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
 }
 
-.instagram-logout {
+.remover {
     color: #0095f6;
     margin-top: 1rem;
 }
 
-.not-account {
+.mudar-conta {
     color: rgb(160, 160, 160);
 }
 
-.link-blue {
+.link {
     color: #0095f6;
 }
 
-.get-the-app {
+.box-app {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,47 +113,48 @@ body {
     padding: 1rem;
 }
 
-.app-download {
+.app {
     height: 3rem;
     width: 10rem;
     background-size: cover;
 }
 
-.app-download:nth-child(1) {
+.app:nth-child(1) {
     background-image: url('./img/apple-button.png');
 }
 
-.app-download:nth-child(2) {
+.app:nth-child(2) {
     background-image: url('./img/googleplay-button.png');
 }
 
 /* media queries */
 
-
+/*tablet*/
 @media (max-width: 1024px) {
-    .instagram-wrapper {
+    .principal {
         width: 90%;
     }
-}
+} 
 
+/*celular*/
 @media (max-width: 650px) {
     body {
         background-color: #ffffff;
     }
 
-    .instagram-wrapper {
+    .principal {
         width: 90%;
     }
 
-    .instagram-phone {
+    .celular {
         display: none;
     }
 
-    .instagram-continue {
+    .continue {
         width: 100%;
     }
     
-    .group {
+    .box {
         border: 1px solid transparent;
     }
 }
